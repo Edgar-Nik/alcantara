@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 0.9vw;
+}
+@font-face{
+    font-family: 'Verdana';
+    src: url('../fonts/Verdana.ttf') format('truetype');
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Verdana', sans-serif;
+    background: #FFFEFF;
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    border-bottom: 1px solid #a0a0a0;
+}
+.header-container{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26.87rem;
+}
+.menu{
+    width: 3.9rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.menu>img{
+    width: 100%;
+}
+.logo{
+    width: 20.1rem;   
+}
+.logo img{
+width: 100%;
+}
+.search-block{
+    border: 1px solid #a0a0a0;
+    border-radius: 4rem;
+    width: 54rem;
+    display: flex;
+    height: 3.56rem;
+    margin: 0 auto;
+}
+.search-form{
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+}
+.search-form *{
+    outline: none;
+    border: none;
+
+}
+.searchInput{
+   height: 100%;
+   font-size: 1.1rem;
+   border-radius: 4rem;
+   padding-left: 2.1rem;
+   width: 85%;
+   margin-right: 1.5rem;
+}
+.search-btn{
+    background: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor : pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.18rem;
+}
+.search-btn>img{
+    width: 100%;
+    height: 100%;
+}
+#file{
+    display: none;
+}
+.file-fake{
+cursor: pointer;
+width: 1.5rem;
+height: 1.5rem;
+}
+.file-fake>img{
+    width: 100%;
+    height: 100%;
+}
+.header-items{
+    display: flex;
+    align-items: center;
+font-size: 1rem;
+}
+.header-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color:#000;
+}
+.header-item-pic{
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-bottom: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-item-pic img{
+   width: 100%;
+}
+.container{
+    width: 96%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.top-section{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-section-inner{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+.top-section-inner a{
+    font-size: 1.25rem;
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+.top-section-lang{
+    display: flex;
+    font-weight: bold;
+    font-size:1.2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+}
+.top-section-lang img{
+   width: .8rem;
+   margin-left: .4rem;
+}
+.top-section-social-net{
+    display: flex;
+}
+.top-section-social-net a{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+}
+.top-section-social-net img{
+    width: 100%;
+    height: 100%;
+}
+.banners{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.banner-item{
+    position: relative;
+    width: 51rem;
+    display: flex;
+}
+.slider-item{
+    width: 51rem;
+
+}
+.slider-item img{
+    width: 100% !important;
+}
+
+.small-banners{
+    margin-top: 3.5rem;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-column-gap:3.5rem;
+    margin-bottom: 3.5rem;
+
+}
+.small-banners img{
+    width: 100%;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+.banners .slick-prev {
+    left: 1rem !important;
+ 
+    z-index: 5 !important;
+}
+.banners .slick-next{
+    right: 1rem !important;
+    z-index: 5 !important;
+}
+.slick-prev, .slick-next {
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 2.7rem !important;
+    color: #434343 !important;
+}
+.slick-dots{
+    bottom: -1.9rem !important;
+}
+.slick-dots li button:before {
+    font-size: .8rem !important;
+}
+.slick-dots li{
+    margin: 0 0.2rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
